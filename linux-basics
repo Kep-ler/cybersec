@@ -15,5 +15,8 @@ ls -a ( show all files including hidden)
 ls -l ( extended view )
 ls -h 
 
-git push origin mail
+git push origin main
+git add linux-basics
+git commit -m "updated linux-basics"
+git push origin main
 // This was commit from ubutu terminal //
