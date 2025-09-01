@@ -1,1 +1,17 @@
+Networking Basics
 
+This file contains fundamental networking commands and interpretations for Linux.  
+
+ip a
+ip addr
+ping -c google.com
+ip a
+traceroute google.com
+ip route
+ss -tuln (open port)
+ss -tunp (active connections)
+
+t - tcp
+u - udp
+-l -listening sockets
+-n - numeric output
