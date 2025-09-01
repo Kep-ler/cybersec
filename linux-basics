@@ -1,1 +1,17 @@
+Learning Linux basic prompt today
+man $command - to ask for help or read about a command
+whatis ( followed by a sring )
+
+
+pwd (shows where yoy are)
+cd ( change directory)
+cd .. ( up one directory )
+cd - ( previous dir )
+touch ( add file )
+mkdir 
+rm (arg)
+ls 
+ls -a ( show all files including hidden)
+ls -l ( extended view )
+ls -h 
 
