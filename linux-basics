@@ -15,3 +15,5 @@ ls -a ( show all files including hidden)
 ls -l ( extended view )
 ls -h 
 
+git push origin mail
+// This was commit from ubutu terminal //
