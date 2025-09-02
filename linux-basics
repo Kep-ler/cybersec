@@ -20,3 +20,5 @@ git add linux-basics
 git commit -m "updated linux-basics"
 git push origin main
 // This was commit from ubuntu terminal //
+
+learnt control operators sep 2.25
