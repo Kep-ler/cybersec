@@ -15,3 +15,28 @@ t - tcp
 u - udp
 -l -listening sockets
 -n - numeric output
+
+3/8/25
+TOOLS USED 
+Wireshark, tcpdump, ping
+
+LESSON : ARP
+Purpose: Maps IP addresses (Layer 3) to MAC addresses (Layer 2).
+Example Packets:
+Who has 10.0.0.5? Tell 10.0.0.1
+10.0.0.5 is at 08:00:27:4e:8b:3c
+Wireshark Filter: arp
+
+ICMP (Internet Control Message Protocol)
+		Purpose: Diagnostics and error reporting (ping/traceroute).
+		Example Packets:
+		Echo (ping) request
+		Echo (ping) reply
+		Wireshark Filter: icmp
+
+command learnt 
+Ping Windows from Kali
+ping -c 4 <X.x.x..x>
+
+Capture ARP & ICMP packets
+sudo tcpdump -i enp0s1 -c 20 arp or icmp
