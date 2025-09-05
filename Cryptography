@@ -1,0 +1,4 @@
+Symmetric encryption = same key for lock/unlock (e.g., AES).
+	•	Asymmetric encryption = public key (share) + private key (keep secret).
+	•	Hashing = one-way, for integrity (e.g., SHA-256).
+	•	TLS = uses both: asymmetric for exchanging the session key, symmetric for actual communication.
