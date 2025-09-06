@@ -2,3 +2,11 @@ Symmetric encryption = same key for lock/unlock (e.g., AES).
 	•	Asymmetric encryption = public key (share) + private key (keep secret).
 	•	Hashing = one-way, for integrity (e.g., SHA-256).
 	•	TLS = uses both: asymmetric for exchanging the session key, symmetric for actual communication.
+
+Ran a vuln scan on Kali usimg nmap to scan ubuntu, I discovered CVE-2001-1002
+NAMED AVAHI NULL UDP PACKET DOS
+step 1: I scan for vuln
+step 2: I analyze the CVE
+--- DoS, medium severity, not critical
+STEP 3: Remediate: disable Avahi
+step 4: verify, rescan to verify mitigation
