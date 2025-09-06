@@ -10,3 +10,58 @@ step 2: I analyze the CVE
 --- DoS, medium severity, not critical
 STEP 3: Remediate: disable Avahi
 step 4: verify, rescan to verify mitigation
+###
+update 04:34 sep 6
+
+Today I practiced vulnerability scanning between my Kali and Ubuntu VMs. Using Nmap, 
+I found that Ubuntu was running the Avahi service on UDP port 5353, and the scan flagged it as vulnerable to CVE-2011-1002 (a null UDP packet DoS).
+
+I tested this by sending an empty UDP packet from Kali using both hping3 and netcat.
+The first time, the VM actually shut down after receiving the packet — a full denial of service, which shows how a small crafted packet can impact availability. 
+Later tests didn’t crash the service, which led me to dig deeper.
+
+On Ubuntu, I checked the Avahi package changelog and confirmed that the CVE was patched in newer versions. 
+This explained why the exploit didn’t always work. It was a great reminder that vulnerability scans can show false positives if the system is already patched.
+
+Learnt:
+Scanning is just the first step. 
+You always need to validate findings, test carefully, and confirm with system updates or changelogs. 
+Patching or disabling unnecessary services (like Avahi) is the best way to reduce risk.
+---------------------------------------
+commands used for vuln scanning:
+# Scan all ports and detect versions
+nmap -sV -p- <Ubuntu_IP>
+
+# Run vulnerability scan with NSE scripts
+nmap --script vuln <IP>
+
+-------------------------------------
+# Check listening UDP ports
+ss -ulnp | grep 5353
+
+# Check Avahi daemon status
+systemctl status avahi-daemon
+
+# Get Avahi version
+avahi-daemon --version
+--------------------------
+# Send a single null UDP packet (requires root)
+sudo hping3 -2 -c 1 -p 5353 <IP>
+
+# Alternative method with netcat (no root needed)
+echo -n "" | nc -u <IP> 5353
+
+--------------------------------
+# Restart Avahi daemon after crash
+sudo systemctl restart avahi-daemon
+
+# Disable Avahi if not needed
+sudo systemctl stop avahi-daemon
+sudo systemctl disable avahi-daemon
+
+# Update all packages (includes patched Avahi)
+sudo apt update && sudo apt upgrade -y
+
+# Confirm CVE patch in package changelog
+apt changelog avahi-daemon | grep CVE-2011-1002
+
