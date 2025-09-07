@@ -33,6 +33,9 @@ Environment Setup
 About
 
 This repository is part of my journey to specialize in Data Security & Privacy and become a certified cybersecurity professional.
- 
+
+ ![Uploading cve-2011-1002 vul.png…]()
+
+![Uploading ubuntu-listening.png…]()
 
 
