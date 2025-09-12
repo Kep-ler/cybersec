@@ -10,3 +10,20 @@ into to lan
 OSI MODEL
 PACKTETS AND FRAMES
 EXTENDING NETWORK
+Rooms Completed:
+	•	Introduction to Cyber Security
+	•	What is Networking?
+	•	How the Web Works
+	•	Linux Fundamentals (overview)
+	•	Windows Fundamentals (overview)
+
+Key Takeaways:
+	•	Understood the CIA Triad (Confidentiality, Integrity, Availability) and why it is core to all security.
+	•	Learned common cyber threats: malware, phishing, social engineering, insider threats.
+	•	Basics of networking concepts: IP addresses, DNS, HTTP/HTTPS, client-server model.
+	•	Importance of encryption and authentication for protecting data in transit.
+
+Security+ Links:
+	•	Domain 1.0 General Security Concepts → CIA triad, security controls.
+	•	Domain 2.0 Threats, Vulnerabilities, and Mitigations → phishing, malware.
+	•	Domain 3.0 Security Architecture → encryption basics.
