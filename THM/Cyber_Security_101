@@ -1,1 +1,21 @@
+Room: https://tryhackme.com/room/searchskills
 
+Learning Objectives
+
+The goal of this room is to teach:
+
+Evaluate information sources
+Use search engines efficiently
+Explore specialized search engines
+Read technical documentation
+Make use of social media
+Check news outlets
+
+learnt about Shodan : It allows you to search for specific types and versions of servers, networking equipment, industrial control systems, and IoT devices
+
+Censys:  Censys focuses on Internet-connected hosts, websites, certificates, and other Internet assets. Some of its use cases include 
+enumerating domains in use, auditing open ports and services, and discovering rogue assets within a network. You might want to check Censys Introductory Use Cases.
+
+ -VIRUSTOTAL
+
+ -PWNED
