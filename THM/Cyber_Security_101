@@ -19,3 +19,9 @@ enumerating domains in use, auditing open ports and services, and discovering ro
  -VIRUSTOTAL
 
  -PWNED
+
+Active Directory Basics
+- What Active Directory is
+ What an Active Directory Domain is
+ What components go into an Active Directory Domain
+ Forests and Domain Trust
