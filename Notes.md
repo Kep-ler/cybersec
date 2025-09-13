@@ -23,3 +23,24 @@ Symmetric Encryption (Secret Key)
 	•	Encrypts traffic between client & server.
 	•	Uses asymmetric encryption for key exchange, then symmetric encryption for session.
 	•	Real-world: the little padlock in your browse
+
+
+Finished Prof Messer 4.5 through 5.0, closing out Domain 4: Implementation.
+
+What I Learned
+	•	How enterprises enhance security capabilities (endpoint protection, segmentation, NAC, continuous monitoring).
+	•	Vulnerability scanning in practice:
+	•	Found Avahi CVE (2011-1002) with Nmap.
+	•	Tested with hping3/netcat → confirmed patched on Ubuntu.
+	•	Installed and scanned Apache with Nikto:
+	•	Found missing headers (X-Frame-Options, X-Content-Type-Options).
+	•	Fixed configs and confirmed remediation.
+	•	Key lesson: scans ≠ proof → must validate findings, confirm patches, and apply hardening.
+
+Reflection
+
+This domain gave me real hands-on understanding of how misconfigurations and outdated services impact enterprise security. I also saw how false positives show up in vuln scans and why patching + verification is critical.
+
+Next Steps
+	•	Start Domain 5: Operations and Incident Response.
+	•	Labs: SSH hardening, log analysis, SIEM basics, and controlled incident response exercises.
