@@ -44,3 +44,17 @@ This domain gave me real hands-on understanding of how misconfigurations and out
 Next Steps
 	•	Start Domain 5: Operations and Incident Response.
 	•	Labs: SSH hardening, log analysis, SIEM basics, and controlled incident response exercises.
+What I Learned
+	•	How to walk through the incident response lifecycle: preparation → identification → containment → eradication → recovery → lessons learned.
+	•	Basics of SIEM/log analysis (journalctl, auth logs, packet captures in Wireshark).
+	•	Forensics concepts: chain of custody, evidence handling, and why documentation matters.
+	•	Practical containment/mitigation steps like disabling accounts, isolating machines, and validating recovery.
+
+Labs & Practice
+	•	Captured and filtered traffic with Wireshark on Kali.
+	•	Reviewed system logs on Ubuntu for authentication events.
+	•	Simulated a small incident response case around the Avahi DoS vulnerability → detected, responded, and documented actions.
+
+Reflection
+
+Domain 5 tied everything together: the tools are important, but the process is what ensures security teams handle incidents consistently. It was valuable to treat my lab events like “real incidents” and practice documenting the response.
