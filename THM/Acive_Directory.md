@@ -17,3 +17,4 @@ Domain Controller (DC) → The server that runs AD and stores authentication/aut
 	•	Principle of Least Privilege → AD enforces (or fails to enforce) this.
 	•	Single Sign-On (SSO) → Implemented through AD + Kerberos.
 	•	Threats & Mitigations → Pass-the-Hash, Golden Ticket, Kerberoasting, etc. (often appear in Security+ and real jobs).
+<img width="1680" height="1050" alt="Untitled 3" src="https://github.com/user-attachments/assets/dfac8753-77bc-4ee1-a668-f2cbf5e58d3c" />
