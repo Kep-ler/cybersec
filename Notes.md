@@ -58,3 +58,20 @@ Labs & Practice
 Reflection
 
 Domain 5 tied everything together: the tools are important, but the process is what ensures security teams handle incidents consistently. It was valuable to treat my lab events like “real incidents” and practice documenting the response.
+
+I have officially finished the full Prof Messer Security+ (SY0-701) video course.
+
+What This Means
+	•	Covered all 6 domains from start to finish:
+	•	Domain 1: General Security Concepts
+	•	Domain 2: Threats, Vulnerabilities, and Mitigations
+	•	Domain 3: Security Architecture
+	•	Domain 4: Implementation
+	•	Domain 5: Operations and Incident Response
+	•	Domain 6: Governance, Risk, and Compliance
+	•	Built a strong foundation that ties into my hands-on labs and book studies.
+
+Key Reflections
+	•	Prof Messer’s series gave me clarity on exam topics and how they connect.
+	•	Reinforced my practical work: Nmap scans, Avahi CVE test, Apache hardening with Nikto, SSH/log analysis, Wireshark packet captures, and incident response simulation.
+	•	Watching the full course kept me consistent and on track.
