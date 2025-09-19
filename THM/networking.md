@@ -27,3 +27,7 @@ The second approach to secure network traffic is to use SSH. Although SSH is mai
 The last approach we covered to secure network traffic is using VPN connections. A VPN connection is usually the perfect option for connecting two company branches.
 
 We will finish this room with a hands-on challenge.
+
+<img width="1680" height="1050" alt="NETWOE" src="https://github.com/user-attachments/assets/7281a98a-7981-432b-8ca0-bd0a8269e51a" />
+
+
