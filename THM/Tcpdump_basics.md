@@ -29,3 +29,12 @@ tcpdump -v	Verbose display; verbosity can be increased with -vv and -vvv
 
 <img width="1680" height="1050" alt="tcpdump1" src="https://github.com/user-attachments/assets/15a4f506-f442-4928-853a-4c3c33d2cf20" />
 
+What I Learned
+	•	tcpdump is like a CLI version of Wireshark → great for quick captures and working on remote servers.
+	•	I can filter by protocol, port, or host to focus on relevant traffic.
+	•	Capturing to .pcap lets me analyze later in Wireshark with a GUI.
+	•	Useful for incident response, troubleshooting, or validating suspicious traffic.
+
+Reflection
+
+Using tcpdump gave me more confidence in analyzing network traffic without relying on a GUI. It ties directly into Security+ Domain 5 (Operations & Incident Response) because packet captures are a critical part of monitoring and investigation.
