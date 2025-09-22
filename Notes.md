@@ -75,3 +75,14 @@ Key Reflections
 	•	Prof Messer’s series gave me clarity on exam topics and how they connect.
 	•	Reinforced my practical work: Nmap scans, Avahi CVE test, Apache hardening with Nikto, SSH/log analysis, Wireshark packet captures, and incident response simulation.
 	•	Watching the full course kept me consistent and on track.
+
+	neworking
+	
+Routers
+Routers connect multiple networks together. They also connect computers on those networks to the Internet. Routers enable all networked computers to share a single Internet connection, which saves money. 
+
+A router acts a dispatcher. It analyzes data being sent across a network, chooses the best route for data to travel, and sends it on its way. 
+
+Routers connect your business to the world, protect information from security threats, and can even decide which computers receive priority over others. 
+
+Beyond those basic networking functions, routers come with additional features to make networking easier or more secure. Depending on your security needs, for example, you can choose a router with a firewall, a virtual private network (VPN), or an Internet Protocol (IP) communications system.
