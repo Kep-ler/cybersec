@@ -38,3 +38,5 @@ What I Learned
 Reflection
 
 Using tcpdump gave me more confidence in analyzing network traffic without relying on a GUI. It ties directly into Security+ Domain 5 (Operations & Incident Response) because packet captures are a critical part of monitoring and investigation.
+
+STILL LEARNING TCP DUMP
