@@ -64,4 +64,7 @@ sudo apt update && sudo apt upgrade -y
 
 # Confirm CVE patch in package changelog
 apt changelog avahi-daemon | grep CVE-2011-1002
+Cryptographic algorithms
+Cryptosystems use a set of procedures known as cryptographic algorithms, or ciphers, 
+to encrypt and decrypt messages to secure communications among computer systems, devices and applications.
 
