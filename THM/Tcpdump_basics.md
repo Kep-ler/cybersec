@@ -40,3 +40,22 @@ Reflection
 Using tcpdump gave me more confidence in analyzing network traffic without relying on a GUI. It ties directly into Security+ Domain 5 (Operations & Incident Response) because packet captures are a critical part of monitoring and investigation.
 
 STILL LEARNING TCP DUMP
+
+
+tcpdump -r traffic.pcap icmp | wc -l 
+www.flino.dev
+www.flino.dev
+Key points:
+Command breakdown: tcpdump reads the file (-r traffic.pcap), filters for icmp traffic, and wc -l counts the number of lines (packets).
+Context: This question is part of network traffic analysis, often used to identify ICMP tunnelling or mapping active hosts
+
+
+Using pcap-filter, Tcpdump allows you to refer to the contents of any byte in the header using the following syntax proto[expr:size], where:
+
+proto refers to the protocol. For example, arp, ether, icmp, ip, ip6, tcp, and udp refer to ARP, Ethernet, ICMP, IPv4, IPv6, TCP, and UDP respectively.
+expr indicates the byte offset, where 0 refers to the first byte.
+size indicates the number of bytes that interest us, which can be one, two, or four. It is optional and is one by default.
+To better understand this, consider the following two examples from the pcap-filter manual page (and don’t worry if you find them difficult):
+
+ether[0] & 1 != 0 takes the first byte in the Ethernet header and the decimal number 1 (i.e., 0000 0001 in binary) and applies the & (the And binary operation). It will return true if the result is not equal to the number 0 (i.e., 0000 0000). The purpose of this filter is to show packets sent to a multicast address. A multicast Ethernet address is a particular address that identifies a group of devices intended to receive the same data.
+ip[0] & 0xf != 5 takes the first byte in the IP header and compares it with the hexadecimal number F (i.e., 0000 1111 in binary). It will return true if the result is not equal to the (decimal) number 5 (i.e., 0000 0101 in binary). The purpose of this filter is to catch all IP packets with options.
