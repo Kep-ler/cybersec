@@ -27,3 +27,12 @@ Diffie-Hellman
 SSH
 SSL/TLS Certificates
 PGP and GPG
+
+ for RSA in CTFs: p, q, m, n, e, d, and c. As per our numerical example:
+
+p and q are large prime numbers
+n is the product of p and q
+The public key is n and e
+The private key is n and d
+m is used to represent the original message, i.e., plaintext
+c represents the encrypted text, i.e., ciphertext
