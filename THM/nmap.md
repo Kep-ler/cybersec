@@ -41,4 +41,16 @@ By default, Nmap scans the top 1,000 most common ports. Port scanning can be cus
 
 UDP services can be scanned using `-sU`. Closed UDP ports typically respond with ICMP “destination unreachable (port unreachable)” messages.
 
+Forcing the Scan
+
+When we run our port scan, such as using -sS, there is a possibility that the target host does not reply during the host discovery phase (e.g. a host doesn’t reply to ICMP requests). Consequently, Nmap will mark this host as down and won’t launch a port scan against it. We can ask Nmap to treat all hosts as online and port scan every host, including those that didn’t respond during the host discovery phase. This choice can be triggered by adding the -Pn option.
+
+Summary
+
+Option	Explanation
+-O	OS detection
+-sV	Service and version detection
+-A	OS detection, version detection, and other additions
+-Pn	Scan hosts that appear to be down
+
 
