@@ -180,3 +180,36 @@ john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt
 <img width="1680" height="1050" alt="JTR2" src="https://github.com/user-attachments/assets/1d90098a-f9db-4361-8769-0bcc466c46a2" />
 <img width="1535" height="865" alt="jtr" src="https://github.com/user-attachments/assets/db98aa9c-59ce-4c8e-b81d-be64a8c63649" />
 
+Cracking an SSH Private Key Password Using John the Ripper
+In my latest hands-on lab, I explored cracking password-protected SSH private keys using John the Ripper. SSH key-based authentication is a common method for secure login, but private keys are often password-protected. This exercise demonstrated how to audit and recover such passwords in a controlled environment.
+Workflow
+Step 1: Convert the SSH Key to a Hash
+John cannot read an encrypted private key directly. Using ssh2john, the id_rsa file was converted into a hash format suitable for John:
+
+cd ~/John-the-Ripper-The-Basics/Task11/
+python3 /opt/john/ssh2john.py id_rsa > id_rsa_hash.txt
+This produces id_rsa_hash.txt, which contains the password hash.
+Step 2: Perform a Dictionary Attack
+The hash was then attacked using a wordlist:
+
+john --wordlist=/usr/share/wordlists/rockyou.txt id_rsa_hash.txt
+John systematically tried passwords from the wordlist until the correct password was found.
+Step 3: Reveal the Password
+
+john --show id_rsa_hash.txt
+This command displayed the recovered SSH private key password, completing the exercise.
+Key Takeaways
+How private key encryption works in SSH and why strong passwords are crucial
+The practical use of conversion tools like ssh2john in password auditing
+Applying wordlist-based attacks in ethical hacking scenarios
+Reinforced the workflow of hash extraction, attack, and verification
+Tools Used
+Kali Linux
+John the Ripper
+ssh2john.py
+rockyou.txt wordlist
+This lab strengthened my practical understanding of offensive security techniques and reinforced the importance of secure key management in real-world environments.
+
+<img width="1535" height="865" alt="jtr" src="https://github.com/user-attachments/assets/04bf8851-a33a-427c-bc7d-bffb0d8bf7dd" />
+
+
