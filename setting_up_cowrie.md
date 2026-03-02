@@ -19,3 +19,4 @@ Skills and Tools:
 
 This hands-on project deepened my understanding of network security, honeypot technologies, and the methods used by attackers to exploit vulnerable systems.
 
+<img width="1680" height="1050" alt="cowrie1" src="https://github.com/user-attachments/assets/ca25dc90-e2e6-461c-a9d9-47d9f908d8f3" />
