@@ -1,41 +1,95 @@
-# cybersec
-my cyber security lab
-Welcome to my Cybersecurity Learning Repository.
-This repo documents my journey into cybersecurity — covering Linux fundamentals, networking, penetration testing, and more.
-cybersec/
-linux-basics/        # Notes & exercises on Linux commands and permissions
-networking-basics/   # Networking fundamentals, theory & practice
-wireshark-labs/      # Packet captures and analysis exercises
-recon-labs/          # Reconnaissance tools (nmap, dig, whois, etc.)
+# Cybersecurity Projects
 
-Goals
-		Build a solid foundation in Linux and Networking
-		Practice using cybersecurity tools in Kali Linux
-	  Document everything for future reference
-		Create a portfolio of hands-on labs
+A practical cybersecurity learning portfolio documenting hands-on work across network security, vulnerability assessment, attack detection, cloud security, and web application security.
 
-Environment Setup
-		Ubuntu VM for Notes, Linux practice, documentation
-		Kali VM for Hands-on penetration testing & security tools
-		Mac Host for SSH into both VMs and manage workflow
-		GitHub for Store progress, notes, and labs
+## Security Learning Progression
 
+The repository reflects a progression from foundational security concepts and tooling toward practical security assessments and attack simulations.
 
-**   Progress Checklist
-		Set up GitHub with SSH
-		Configure Ubuntu and Kali VMs
-		Linux basics notes
-		Networking basics notes
-		Wireshark packet analysis labs
-		Reconnaissance labs
+### Foundations
 
+- Linux and command-line fundamentals
+- Networking concepts
+- Nmap
+- Wireshark
+- Tcpdump
+- Cryptography and hashing
+- John the Ripper
 
-About
+### Practical Security Projects
 
-This repository is part of my journey to specialize in Data Security & Privacy and become a certified cybersecurity professional.
+| Project | Focus |
+|---|---|
+| Project 1 | SSH Honeypot & Network Attack Detection |
+| Project 2 | Vulnerability Assessment & Exploit Simulation |
+| Project 3 | AWS IAM Privilege Escalation Simulation |
+| Project 4 | Log Analysis & Attack Detection |
+| Project 5 | Web Application Attack & Defense |
 
- ![Uploading cve-2011-1002 vul.png…]()
+## Projects
 
-![Uploading ubuntu-listening.png…]()
+### 01 — SSH Honeypot & Network Attack Detection
 
+A controlled lab involving Cowrie, SSH reconnaissance, simulated brute-force activity, traffic capture, incident analysis, and defensive recommendations.
 
+[View Project](project-01-ssh-honeypot/)
+
+### 02 — Vulnerability Assessment & Exploit Simulation
+
+A controlled assessment using OpenVAS and Metasploit to identify vulnerabilities, demonstrate exploitation, and develop remediation strategies.
+
+[View Project](project-02-vulnerability-assessment/)
+
+### 03 — AWS IAM Privilege Escalation Simulation
+
+A cloud-security exercise demonstrating how excessive IAM permissions can enable privilege escalation and persistent access, followed by least-privilege remediation.
+
+[View Project](project-03-aws-privilege-escalation/)
+
+### 04 — Log Analysis & Attack Detection
+
+A security monitoring project focused on examining logs, identifying suspicious activity, investigating attack patterns, and documenting findings.
+
+[View Project](project-04-log-analysis/)
+
+### 05 — Web Application Attack & Defense
+
+A controlled web-security project focused on identifying application weaknesses, performing security testing, applying defensive controls, and validating remediation.
+
+[View Project](project-05-web-attack-defense/)
+
+## Tools & Technologies
+
+- Kali Linux
+- Linux
+- Nmap
+- Wireshark
+- Tcpdump
+- Cowrie
+- OpenVAS
+- Metasploit Framework
+- Damn Vulnerable Web Application (DVWA)
+- AWS CLI
+- AWS IAM
+- Git & GitHub
+
+## Methodology
+
+The projects emphasize a practical security workflow:
+
+**Reconnaissance → Detection → Exploitation → Analysis → Remediation → Validation**
+
+All offensive security activities documented here were performed against intentionally vulnerable systems or controlled lab environments.
+
+## Repository Structure
+
+```text
+.
+├── project-01-ssh-honeypot/
+├── project-02-vulnerability-assessment/
+├── project-03-aws-privilege-escalation/
+├── project-04-log-analysis/
+├── project-05-web-attack-defense/
+├── THM/
+├── wireshark-labs/
+└── ...
